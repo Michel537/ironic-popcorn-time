@@ -1,9 +1,13 @@
 import "./Header.css"
 
-function Header(){
+function Header({numberOfMovies}){
+    
+
     return(
         <header className="Header">
-            <h1>this is the Header component</h1>
+            <h1>Popcorn Time!</h1>
+            
+            <p> We currently have {numberOfMovies} movies in our catalog </p>
         </header>
     )
 }
